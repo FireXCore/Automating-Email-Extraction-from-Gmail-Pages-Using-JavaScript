@@ -2,39 +2,49 @@
 
 ## Overview
 
-This repository features a powerful JavaScript script designed to automate the extraction of email addresses from multiple Gmail inbox pages. Whether you're analyzing email data or building a contact list, this tool simplifies the process, gathering and saving emails into a JSON file for easy use.
+This repository contains an enhanced JavaScript script designed to automate the extraction of email addresses from multiple Gmail inbox pages. Ideal for data analysis or contact list creation, this tool efficiently gathers emails and saves them into a JSON file, with improved reliability and validation.
 
 ## How It Works
 
-- **Email Extraction**: The script scans each Gmail inbox page and collects email addresses using a regular expression, automatically removing duplicates.
-- **Automatic Page Navigation**: It navigates through multiple Gmail pages, continuing the extraction until no more emails are detected.
-- **Download Results**: After extraction, the emails are saved as a downloadable JSON file for further analysis.
+- **Email Extraction**: The script scans each Gmail inbox page, extracting valid email addresses using a robust regular expression, ensuring duplicates are removed.
+- **Automatic Page Navigation**: It seamlessly navigates through Gmail inbox pages, continuing until no more emails are found.
+- **Error Handling**: Comprehensive error handling ensures the process is robust, saving collected emails even if an error occurs.
+- **Download Results**: Extracted emails are compiled into a downloadable JSON file for easy use.
 
 ## Key Features
 
-1. **Automated Extraction**: 
-   - The script autonomously scans and collects emails, starting from the first inbox page and continuing through all available pages.
-   
-2. **Regex Email Collection**: 
-   - A regular expression is used to identify all visible email addresses on each page.
+1. **Automated Extraction**:
+   - Automatically scans and collects emails starting from the first inbox page, continuing through all available pages until no emails remain.
 
-3. **Page Navigation**: 
-   - It transitions between Gmail pages automatically, ensuring content loads fully before continuing.
+2. **Improved Email Validation**:
+   - Uses an advanced regular expression (`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`) to ensure only valid email addresses are extracted, filtering out invalid formats.
 
-4. **JSON Export**: 
-   - All extracted emails are compiled into a JSON file that can be downloaded directly.
+3. **Dynamic Page Navigation**:
+   - Employs `MutationObserver` to detect when page content is fully loaded, eliminating fixed delays and improving efficiency.
+
+4. **Robust Error Handling**:
+   - Incorporates `try-catch` blocks to handle errors during extraction, navigation, and saving, ensuring data is preserved even in case of failures.
+
+5. **JSON Export**:
+   - Compiles all extracted emails into a JSON file, automatically downloaded for further analysis.
 
 ## Full Tutorial
 
-For a **step-by-step guide** on how to use this script, including detailed explanations and code breakdowns, please visit  https://firexcore.com/blog/extracting-email…gmail-javascript/ ‎. You'll learn how to:
+For a **step-by-step guide** on how to use this script, including detailed explanations and code breakdowns, please visit [https://firexcore.com/blog/extracting-email-gmail-javascript/](https://firexcore.com/blog/extracting-email-gmail-javascript/). You'll learn how to:
 
-- Set up the script
-- Understand the key functions
-- Run the extraction process
-- Save and utilize the results
+- Set up the script in your browser's developer console
+- Understand the key functions and their improvements
+- Run the extraction process efficiently
+- Handle and utilize the resulting JSON file
 
 ---
 
 ### Example Use Case
 
-Use this script to gather email addresses from your Gmail inbox for personal or business purposes. Always ensure compliance with privacy and legal standards when collecting data.
+Use this script to collect email addresses from your Gmail inbox for personal or business purposes, such as contact management or data analysis. Always ensure compliance with privacy laws (e.g., GDPR) and Gmail's terms of service when extracting data.
+
+### Important Notes
+
+- **Execution**: Run the script in the browser's developer console while logged into Gmail.
+- **Testing**: Test in a controlled environment (e.g., a non-sensitive Gmail account) to verify functionality.
+- **Legal Compliance**: Ensure you have permission to extract and use email addresses, adhering to applicable privacy regulations.
