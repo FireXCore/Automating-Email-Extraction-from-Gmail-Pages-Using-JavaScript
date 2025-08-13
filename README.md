@@ -30,7 +30,7 @@ This repository contains an enhanced JavaScript script designed to automate the 
 
 ## Full Tutorial
 
-For a **step-by-step guide** on how to use this script, including detailed explanations and code breakdowns, please visit [https://firexcore.com/blog/extracting-email-gmail-javascript/](https://firexcore.com/blog/extracting-email-gmail-javascript/). You'll learn how to:
+For a **step-by-step guide** on how to use this script, including detailed explanations and code breakdowns, please visit [[https://firexcore.com/blog/extracting-email-gmail-javascript/](https://firexcore.com/blog/extracting-email-gmail-javascript/](https://firexcore.com/blog/extracting-emails-from-gmail-javascript/)). You'll learn how to:
 
 - Set up the script in your browser's developer console
 - Understand the key functions and their improvements
